@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact/The World Travel Guy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/920c0b56ad.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_container sticky-top">
+            <img src="images/Logo_2.webp" alt="The World Travel Guy" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html">blogs </a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact </a></li>
+                </ul>
+            </div>
+            <div class="loginText">
+                <a href="login.html">Log In</a>
+                <span class="text-white">|</span>
+                <a href="signup.html">Sign Up</a>
+            </div>
+
+        <!--  Side Bar for mobile -->
+                <div class="mobile_left" id="mobile">
+                    <button class="btn-close position-absolute top-0 end-0" onclick="dismiss()" style="border-radius: 50%;
+                    width: 30px;
+                    height: 30px;"></button>
+                    <img src="images/Logo_2.webp" alt="The World Travel Guy" class="mt-3 mx-auto mb-3">
+
+                    <div class="foraccount">
+                        <a href="login.html">Log In</a>
+                        <span class="fs-3">|</span>
+                        <a href="signup.html"> Sign Up </a>
+                    </div>
+
+                    <div class="sideMenu_link">
+                        <a href="https://www.facebook.com/TheWorldTravelGuy">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/theworldtravelguy/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@TheWorldTravelGuy/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/TheWorldTravelGuy/">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <a href="index.html">home</a>
+                    <a href="blog.html">blogs </a>
+                    <a href="about.html">about </a>
+                    <a href="contact.html">contact </a>
+                </div>
+       <!-- End of the side Bar  -->
+
+            <div class="menuIcon_container">
+                <button class="humburgerBtn" onclick="changeClass()">
+                    <i class="fa-solid fa-bars primary"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="aboutContainer">
+            <img src="images/Contactme.jpg">
+        </div>
+        <div class="overlay_text">
+            <h2>CONTACT</h2>
+            <p>Send me your questions, comments, or suggestions!</p>
+        </div>
+
+       <div class="form_Container mt-5">
+        <div class="formTitle">
+            <h2>GET IN TOUCH</h2>
+            <h3>Contact Form</h3>
+            <p>Send me your questions, comments, or suggestions!</p>
+            <p class="w-xxl-75 w-sm-100 d-block mx-auto">If you'd like to work with me or you have a question or comment, you can contact me using the form below. You can also find <a href="about.html">more info about me here.</a></p>
+            <p>Sometimes I'm busy traveling, but I try to respond to any messages!</p>
+        </div>
+        <div class="formInput d-block mx-auto px-xxl-2 mt-5 py-3 px-1">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="...">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="...@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Messages</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="submitbtn mx-auto">Submit</button>
+        </div>
+        <p class="text-center mx-auto w-75 pt-4">This site is protected by reCAPTCHA, and the Google <a href="#">Privacy Policy</a> and <a href="#"> Terms of Service </a> apply.</p>
+
+       </div>
+       <div class="faq">
+            <h2>FREQUENTLY ASKED QUESTION</h2>
+            <div class="faqArrange">
+                <div class="faqCon">
+                    <div class="faq_icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="faq_text">
+                        <h3>Do you accept guest blogs?</h3>
+                        <p>No, I do not accept guest blog posts at this time.</p>
+                    </div>
+                </div>
+                <div class="faqCon">
+                    <div class="faq_icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="faq_text">
+                        <h3>Where do you book hotels?</h3>
+                        <p><a href="https://www.booking.com/index.html?aid=1687967">Booking.com</a> is my preference for international travel. Their pricing is more transparent and they usually have the best terms.</p>
+                    </div>
+                </div>
+                <div class="faqCon">
+                    <div class="faq_icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="faq_text">
+                        <h3>Can I buy drone footage from you?</h3>
+                        <p>Sure, just send me a note letting me know what footage you’re interested in!</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+        <div class="emailInput mt-5">
+            <h3>Newsletter</h3>
+            <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+            <div class="inputGp mt-2 mx-auto pb-2">
+                <input type="email" name="userEmail" placeholder="E-mail..." required id="input">
+                <button id="subscribe" onclick="ChangeText()">Subscribe</button>
+            </div>
+        </div>
+        
+        <div class="footer_container pt-2">
+            <div class="footer_link">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="copyRight mx-auto pt-2 text-center">
+                <p class="pt-2 pb-1">&copy; The World Travel Guy 2023</p>
+                <span>Affiliate Disclosures</span><span>Privacy Policy</span><span>Terms Of Use</span>
+                <p class="mt-3 w-75 mx-auto pb-2 mb-0">Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I feel are high quality and helpful to my readers. Thanks for your support.</p>
+            </div>
+        </div>
+    </div>
+    <script src="newJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

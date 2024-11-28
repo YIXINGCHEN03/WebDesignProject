@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs/The World Travel Guy</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/920c0b56ad.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_container sticky-top">
+            <img src="images/Logo_2.webp" alt="The World Travel Guy" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html">blogs </a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact </a></li>
+                </ul>
+            </div>
+            <div class="loginText">
+                <a href="login.html">log In</a>
+                <span class="text-white">|</span>
+                <a href="signup.html">Sign Up</a>
+            </div>
+
+        <!--  Side Bar for mobile -->
+                <div class="mobile_left" id="mobile">
+                    <button class="btn-close position-absolute top-0 end-0" onclick="dismiss()" style="border-radius: 50%;
+                    width: 30px;
+                    height: 30px;"></button>
+                    <img src="images/Logo_2.webp" alt="The World Travel Guy" class="mt-3 mx-auto mb-3">
+
+                    <div class="foraccount">
+                        <a href="login.html">Log In</a>
+                        <span class="fs-3">|</span>
+                        <a href="signup.html"> Sign Up </a>
+                    </div>
+
+
+                    <div class="sideMenu_link">
+                        <a href="https://www.facebook.com/TheWorldTravelGuy">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/theworldtravelguy/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@TheWorldTravelGuy/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/TheWorldTravelGuy/">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <a href="index.html">home</a>
+                    <a href="blog.html">blogs </a>
+                    <a href="about.html">about </a>
+                    <a href="contact.html">contact </a>
+                </div>
+       <!-- End of the side Bar  -->
+
+            <div class="menuIcon_container">
+                <button class="humburgerBtn" onclick="changeClass()">
+                    <i class="fa-solid fa-bars primary"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="ExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators d-none d-lg-block text-center">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-item-height">
+                <img src="images/Bagan-news-moht (1).jpg" class="d-block w-100 position-absolute h-100 img-fluid" alt="...">
+                <div class="carousel-caption d-sm-block position-relative top-50 start-50 translate-middle">
+                  <h5>Myanmar Stands Proud With Bagan</h5>
+                  <p>Earlier this month, UNESCO officially designated Myanmar’s ancient city of Bagan as a World Heritage site.</p>
+                  <a class="btn btn-outline-light" href="BlogDetail.html">Read Now</a>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-height">
+                <img src="images/wallpaperflare.com_wallpaper.jpg" class="d-block w-100 position-absolute h-100 img-fluid" alt="...">
+                <div class="carousel-caption d-sm-block position-relative top-50 start-50 translate-middle">
+                  <h5>Great Wall, China</h5>
+                  <p>Beijing is the top destination for seeing well-maintained Great Wall relics of the Ming Dynasty (1368–1644).</p>
+                  <a class="btn btn-outline-light" href="BlogDetail.html">Read Now</a>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-height">
+                <img src="images/switzer.jpg" class="d-block w-100 position-absolute h-100 img-fluid" alt="...">
+                <div class="carousel-caption d-sm-block position-relative top-50 start-50 translate-middle">
+                  <h5>Château de Chillon</h5>
+                  <p>Located on an island in Lake Geneva near the popular town of Montreux, the castle dates..</p>
+                  <a class="btn btn-outline-light" href="BlogDetail.html">Read Now</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#ExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#ExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container mt-4 mb-4">
+            <h3 class="text-start mt-2 blogPTitle" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <span>Blogs & Guides</span>
+            </h3>
+            <div class="item_container d-flex justify-content-center mt-3">
+                <div class="item_col_container">
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/thailand.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Asia</span></a>
+                                <a href=""><span>Bucket Lists</span></a>
+                                <a href=""><span>Krabi</span></a>
+                                <a href=""><span>Phuket</span></a>
+                                <a href=""><span>South Thailand </span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Samet Nangshe Viewpoint: Best Sunrise Spot In Thailand</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <a href="BlogDetail.html" class="text-decoration-none"><button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button></a>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Blogdetail.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Asia</span></a>
+                                <a href=""><span>Bali</span></a>
+                                <a href=""><span>Hiking</span></a>
+                                <a href=""><span>Nusa Penida</span></a>
+                                <a href=""><span>Indonesia</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Samet Nangshe Viewpoint: Best Sunrise Spot In Thailand</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <a href="BlogDetail.html" class="text-decoration-none"><button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button></a>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/jordan.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Europe</span></a>
+                                <a href=""><span>East Iceland</span></a>
+                                <a href=""><span>Hiking</span></a>
+                                <a href=""><span>Iceland</span></a>
+                                <a href=""><span>Waterfall</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2 class="">Is Jordan Safe? Is It Safe To Travel To Jordan & Petra? (Yes!)</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Tantalus.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Hawaii</span></a>
+                                <a href=""><span>North America</span></a>
+                                <a href=""><span>Oahu</span></a>
+                                <a href=""><span>United Stated</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Tantalus Lookout Honolulu: Sunset View & Hike In Oahu, Hawaii</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_col_container ">
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Malay.jpg" alt="Malaysia" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                       
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Asia</span></a>
+                                <a href=""><span>Cities</span></a>
+                                <a href=""><span>Kuala Lumpur</span></a>
+                                <a href=""><span>Malaysia</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>15 Best Things To Do In Kuala Lumpur Malaysia</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/45 Japan.jpg" alt="Japan" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Asia</span></a>
+                                <a href=""><span>Bucket Lists</span></a>
+                                <a href=""><span>Food</span></a>
+                                <a href=""><span>Kyoto</span></a>
+                                <a href=""><span>Japan</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>45 Japan Pictures That Will Make You Want To Travel</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/16 Great Zion Hikes.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Hiking</span></a>
+                                <a href=""><span>Utah</span></a>
+                                <a href=""><span>United States</span></a>
+                                <a href=""><span>North America</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>16 Great Zion Hikes: Best Hikes In Zion National Park</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Colonica.jpg" alt="Colonia" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Argentina</span></a>
+                                <a href=""><span>UNESCO</span></a>
+                                <a href=""><span>Uruguay</span></a>
+                                <a href=""><span>South America</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Colonia Del Sacramento Uruguay: Day Trip From Buenos Aires</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_col_container">
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/25 Best Hikes in Indo.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Asia</span></a>
+                                <a href=""><span>Bucket Lists</span></a>
+                                <a href=""><span>Bali</span></a>
+                                <a href=""><span>Java</span></a>
+                                <a href=""><span>Indonesia</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>25 Best Hikes In Indonesia: Volcanoes, Waterfalls, & Jungles</h2>
+                                <h2 style="color: #888888; font-size: 14px;">Febuary 14,2022</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Santa.jpg" alt="Santa Ana Volcano" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Central America</span></a>
+                                <a href=""><span>Hiking</span></a>
+                                <a href=""><span>Lakes</span></a>
+                                <a href=""><span>Volcanoes</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Santa Ana Volcano Hike In El Salvador (Ilamatepec)</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Arizona.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Arizona</span></a>
+                                <a href=""><span>North America</span></a>
+                                <a href=""><span>Slot Canyons</span></a>
+                                <a href=""><span>United State</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Samet Nangshe Viewpoint: Best Sunrise Spot In Thailand</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                    <div class="blog_container p-3">
+                        <div class="blogImgContainer w-100">
+                            <a href="">
+                                <img src="images/Lamani Belize Ruins.jpg" alt="" class="d-block mx-auto rounded" style="width: 90%;">
+                            </a>
+                        </div>                        
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href=""><span>Belize</span></a>
+                                <a href=""><span>Ruins</span></a>
+                                <a href=""><span>Temples</span></a>
+                                <a href=""><span>Central America</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Lamanai Belize Ruins: The Mayan Mask Temple</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                            <button type="button" class="blogBtn px-3 py-1 rounded d-block mx-auto">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="emailInput">
+            <h3>Newsletter</h3>
+            <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+            <div class="inputGp mt-2 mx-auto pb-2">
+                <input type="email" name="userEmail" placeholder="E-mail..." required id="input">
+                <button id="subscribe" onclick="ChangeText()">Subscribe</button>
+            </div>
+        </div>
+          <div class="footer_container pt-2">
+            <div class="footer_link">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/TheWorldTravelGuy">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/theworldtravelguy/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@TheWorldTravelGuy/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/TheWorldTravelGuy/">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="copyRight mx-auto pt-2 text-center">
+                <p class="pt-2 pb-1">&copy; The World Travel Guy 2023</p>
+                <span>Affiliate Disclosures</span><span>Privacy Policy</span><span>Terms Of Use</span>
+                <p class="mt-3 w-75 mx-auto pb-2 mb-0">Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I feel are high quality and helpful to my readers. Thanks for your support.</p>
+            </div>
+        </div>
+    </div>
+    <script src="newJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

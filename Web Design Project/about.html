@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About/The World Travel Guy</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/920c0b56ad.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_container sticky-top">
+            <img src="images/Logo_2.webp" alt="The World Travel Guy" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html">blogs </a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact </a></li>
+                </ul>
+            </div>
+            <div class="loginText">
+                <a href="login.html">log In</a>
+                <span class="text-white">|</span>
+                <a href="signup.html">Sign Up</a>
+            </div>
+
+        <!--  Side Bar for mobile -->
+                <div class="mobile_left" id="mobile">
+                    <button class="btn-close position-absolute top-0 end-0" onclick="dismiss()" style="border-radius: 50%;
+                    width: 30px;
+                    height: 30px;"></button>
+                    <img src="images/Logo_2.webp" alt="The World Travel Guy" class="mt-3 mx-auto mb-3">
+                    <div class="foraccount">
+                        <a href="login.html">Log In</a>
+                        <span class="fs-3">|</span>
+                        <a href="signup.html"> Sign Up </a>
+                    </div>
+                    <div class="sideMenu_link">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="">
+                             <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <a href="index.html">home</a>
+                    <a href="blog.html">blogs </a>
+                    <a href="about.html">about </a>
+                    <a href="contact.html">contact </a>
+                </div>
+       <!-- End of the side Bar  -->
+
+            <div class="menuIcon_container">
+                <button class="humburgerBtn" onclick="changeClass()">
+                    <i class="fa-solid fa-bars primary"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="aboutContainer">
+            <img src="images/image.png">
+        </div>
+        <div class="overlay_text">
+            <h2>ABOUT</h2>
+            <p>More about me and my wife</p>
+        </div>
+        <div class="aboutBdy">
+            <div class="abouttxtCon">
+                <div class="abouttxt">
+                    <h2>ABOUT ME</h2>
+                    <h5>David</h5>
+                    <p>Thanks for looking! I'm David, and this is <a href="index.html">my travel blog</a>. I'm an American who has been traveling the world full time for 8 years. Nowadays, I'm usually in <a href="#">Bali, Indonesia</a>, with my <a href="#wife">wife Intan.</a></p>
+                    <p>I first fell in love with travel on a solo road trip across <a href="#">Iceland</a> in 2016. My budget was small, so I slept in the back of a rental car for 1 month while I drove 7,000 kilometers around the country, filming all of the scenic places in Iceland. One of my first videos racked up a few million views and was featured on international TV by <a href="#">BBC Travel.</a> </p>
+                    <p>Since then I've solo traveled to many developing countries, including almost every country in Asia, Central America, and the Middle East.</p>
+                    <p>I experienced the 7.0 Lombok earthquake in Indonesia in 2018, <a href="#"> the bombings in Bangkok in 2019</a>, and a fair share of scams, fights, sicknesses, car accidents, and other crazy things along the way.</p>
+                    <p>It hasn't always been easy, but over the years I've been blessed with some amazing experiences like sleeping in jungle treehouses in Bali, trekking to Mount Everest Base Camp in the Himalayas, going on Komodo dragon safaris in Indonesia, dining on tarantulas and scorpions in Cambodia, riding a camel to the Great Pyramids of Giza in Egypt, skydiving in Oahu Hawaii, touring medieval Samurai castles in Japan, and visiting some timeless world monuments like the <a href="#">Taj Mahal</a>,<a href="#"> Tikal</a>,<a href="#">Machu Picchu</a>, <a href="#">Hagia Sophia</a>, <a href="#">Angkor Wat, </a>and <a href="#">Petra.</a></p>
+                    <p>In 2018, I traveled to 24 countries in one year, which is a personal record so far! I did this on a pretty modest budget and rarely spent more than $30/day on my travels, including lodging and food.</p>
+                    <p>I haven't been everywhere, but it's on my list! I'm always looking for new adventures.</p>
+                    <p>I hope <a href="index.html">my travel blog</a> can help and inspire you in your own journeys as well!</p>
+                </div>
+                <div class="SocialIcon">
+                    <h3 class="miniTitle" style="margin-top: 3%;">
+                        <span>Social Media</span>
+                    </h3>
+                    <div class="socialMedia">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"> </i> 
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>           
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>  
+                        <a href="">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>   
+                    </div>
+                </div>
+                <div class="abouttxt">
+                    <h2 id="wife">MY WIFE</h2>
+                    <h5>Intan</h5>
+                    <p>I met my sweet wife and full time travel buddy Intan while I was traveling in Asia in 2017, and we got married two years later on a beach in <a href="#">Bali, Indonesia.</a></p>
+                    <p>She's a former English teacher, makeup artist and homegrown Balinese. Her name means diamond. She grew up riding a scooter and she's tri-lingual (speaks 3 languages fluently).</p>
+                    <p>She's been an indispensable translator for me in remote parts of Indonesia where almost no one speaks English, like <a href="#">Labengki</a> and <a href="#"> the Banyak Islands.</a></p>
+                    <p>Intan is a people lover, and her favorite part about travel is trying new food (especially Asian food). She's not into the hiking so much, but she still joins me on volcano hikes and other such adventures.</p>
+                    <p>We've been traveling the world full time as a couple for 4+ years now, and we spend a lot of time on her home island Bali. We have some more big international trips planned for 2024.</p>
+                    <p>We hope you'll tag along! Please stay tuned!</p>
+                </div>
+                <div class="FeaturedonAbout">
+                    <div class="beforeAfter">
+                        <h2>
+                            Featured
+                        </h2>    
+                    </div>
+                    <div class="featuredImg">
+                        <img src="images/USA_Today_n5.webp" alt="USA_Today_n5">
+                        <img src="images/NBC_News_n3.webp" alt="NBCnews">
+                        <img src="images/News-com-au_4.webp" alt="news.com">
+                        <img src="images/BBC_Travel_n3.webp" alt="BBC_Travel_n3">
+                        <img src="" alt="">
+                        <img src="images/Travel_Leisure_n3.webp" alt="Travel_Leisure_n3">
+                    </div>
+                </div>
+                <div class="abouttxt">
+                    <h2>WORK WITH ME</h2>
+                    <h5>Collabs</h5>
+                    <p>As an experienced traveler with a modest budget and a passion for hiking and <a href="#"> photography</a>, my work meshes with millennials and young people, backpackers, couples, and other important travel demographics.</p>
+                    <p>Together with your brand, we can create engaging experiences that will reach like-minded travelers and help you sell your products or promote your travel destination.</p>
+                    <p>This blog gets 350,000 monthly page views and growing. My goal is to create unique and fresh travel content and photos from around the world, with an emphasis on quality over quantity.</p>
+                    <p>I do all of the writing and photography on this website myself (no AI or stock images) unless otherwise noted. I'm also an FAA Part 107 trained and certified drone pilot for doing commercial work with drones in the United States.</p>
+                    <p>My past work has been featured by some big names in the travel industry, such as <a href="#">Travel + Leisure</a> and <a href="http://www.bbc.com/travel">BBC Travel.</a> , and my videos have racked up more than 20 million views on Facebook via companies like <a href="#"> UNILAD Adventure </a> and <a href="#"> Must Do Travels</a>.</p>
+                    <p>Over the years, I have also partnered with hotels, tourism bureaus, and some great equipment brands like <a href="#"> Napier Outdoors</a>.</p>
+                    <p>You can be next! Feel free to contact me using the form below!</p>
+                </div>
+            </div>
+            <div class="aboutImgMain">
+                <div class="aboutImgCon">
+                    <img src="images/About.jpg" class="item rounded">
+                    <img src="images/about4.jpg" alt="" class="item4 rounded">
+                    <img src="images/about 7.jpg" alt="" class="item7 rounded">
+                    <img src="images/about5.jpg" alt="" class="item5 rounded">
+                    <img src="images/about8.jpg" alt="" class="item8 rounded">
+                    <img src="images/about1.jpg" alt="" class="item1 rounded">
+                    <img src="images/about6.jpg" alt="" class="item6 rounded">
+                </div>
+            </div>
+        </div>
+        
+        <div class="emailInput">
+            <h3>Newsletter</h3>
+            <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+            <div class="inputGp mt-2 mx-auto pb-2">
+                <input type="email" name="userEmail" placeholder="E-mail..." required id="input">
+                <button id="subscribe" onclick="ChangeText()">Subscribe</button>
+            </div>
+        </div>
+
+        
+        <div class="footer_container pt-2">
+            <div class="footer_link">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/TheWorldTravelGuy">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/theworldtravelguy/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@TheWorldTravelGuy/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/TheWorldTravelGuy/">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="copyRight mx-auto pt-2 text-center">
+                <p class="pt-2 pb-1">&copy; The World Travel Guy 2023</p>
+                <span>Affiliate Disclosures</span><span>Privacy Policy</span><span>Terms Of Use</span>
+                <p class="mt-3 w-75 mx-auto pb-2 mb-0">Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I feel are high quality and helpful to my readers. Thanks for your support.</p>
+            </div>
+        </div>
+    </div>
+    <script src="newJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

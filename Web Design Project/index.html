@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/The World Travel Guy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/920c0b56ad.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_container sticky-top">
+            <img src="images/Logo_2.webp" alt="The World Travel Guy" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="blog.html">blogs </a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact </a></li>
+                </ul>
+            </div>
+            <div class="loginText">
+                <a href="login.html">log In</a>
+                <span class="text-white">|</span>
+                <a href="signup.html">Sign Up</a>
+            </div>
+
+
+
+            <!--  Side Bar for mobile -->
+            <div class="mobile_left" id="mobile">
+                <button class="btn-close position-absolute top-0 end-0" onclick="dismiss()" style="border-radius: 50%;
+                width: 30px;
+                height: 30px;"></button>
+                <img src="images/Logo_2.webp" alt="The World Travel Guy" class="mt-3 mx-auto mb-3">
+                <div class="foraccount">
+                    <a href="login.html">Login</a>
+                    <span class="fs-3">|</span>
+                    <a href="signup.html"> Sign Up </a>
+                </div>
+                <div class="sideMenu_link">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i> 
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                         <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                </div>
+                <a href="index.html">home</a>
+                <a href="blog.html">blogs </a>
+                <a href="about.html">about </a>
+                <a href="contact.html">contact </a>
+            </div>
+            <!-- End of the side Bar  -->
+
+            <div class="menuIcon_container">
+                <button class="humburgerBtn" onclick="changeClass()">
+                    <i class="fa-solid fa-bars primary"></i>
+                </button>
+            </div>
+            
+        </div>
+        <div class="Description">
+            <div class="video_container">
+                <video autoplay muted loop src="images/Indonesia 4K Drone - Java, Sulawesi, & Sumatra - Islands, Volcanoes, & Waterfalls.mp4"></video>
+            </div>   
+            <div class="text">
+                <h2>EXPLORE. DREAM. DISCOVER.</h2>
+                <div>
+                    This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the world.
+                    <br><br>
+                    Please tag along!
+               </div>
+            </div>
+                <a class="btn btn-outline-light d-block mx-auto position-relative" href="blog.html">Start Exploring</a>
+        </div>
+        <div class="Featured">
+            <div class="beforeAfter">
+                <h2>
+                    Featured
+                </h2>    
+            </div>
+            <div class="featuredImg">
+                <img src="images/USA_Today_n5.webp" alt="USA_Today_n5">
+                <img src="images/NBC_News_n3.webp" alt="NBCnews">
+                <img src="images/News-com-au_4.webp" alt="news.com">
+                <img src="images/BBC_Travel_n3.webp" alt="BBC_Travel_n3">
+                <img src="images/Travel_Leisure_n3.webp" alt="Travel_Leisure_n3">
+            </div>
+            <div class="flex_container">
+                <div class="img_container">
+                    <a href="blog.html">
+                        <img src="images/Blog.jpg" alt="lazyAnimal" >
+                        <h3>Travel BLog</h3>
+                    </a>
+                </div>
+                <div class="img_container">
+                    <a href="contact.html">
+                        <img src="images/Contact.jpg" alt="trees with lake">
+                        <h3>Contact</h3>
+                    </a>
+                </div>
+                <div class="img_container">
+                    <a href="about.html">
+                        <img src="images/About.jpg" alt="a man with his wife">
+                        <h3>About Us</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- start of travelguide -->
+        <div class="travelGuide">
+            <div class="beforeAfter">
+                <h2>
+                    Travel Guide
+                </h2>    
+            </div>
+            <div class="subTitle">
+                <p>Popular Travel Blog Posts & Guides</p>
+            </div>
+            <div class="blogSorting">
+                <div class="toMore">
+                    <a href="blog.html"><p>Read More &#8594;</p></a>
+                </div>
+                <div class="flex_container">
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/EGYPT PYRAMIDS.jpg" alt="egypt" >
+                            <h4>How to visit egypt pyramids</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/NUSA PENIDA ISLAND GUIDE.jpg" alt="nusa penida island">
+                            <h4>NUSA PENIDA ISLAND GUIDE</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/22Best Things to do in JP.jpg" alt="japan">
+                            <h4>22 best things to do in Japan</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex_container">
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/ankor wat.jpg" alt="ankorwat" >
+                            <h4>Ankor wat cambodia guide</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/bagan.jpg" alt="bagan">
+                            <h4>bagan myanmar guide</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/santotini.jpg" alt="greece">
+                            <h4>santorini greece guide</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="readMoreBtn">
+                <a href="blog.html">
+                    Read More &nbsp;&#62;&#62;
+                </a>
+            </div>
+        </div>
+    <!-- end of travel guide -->
+    
+    <!-- start of hikes -->
+        <div class="travelGuide">
+            <div class="beforeAfter">
+                <h2>
+                    Hikes
+                </h2>    
+            </div>
+            <div class="subTitle">
+                <p>Bucket List Hiking Guides</p>
+            </div>
+            <div class="blogSorting">
+                <div class="toMore">
+                    <a href="blog.html"><p>Read More &#8594;</p></a>
+                </div>
+                <div class="flex_container">
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/everest base camp.jpg" alt="everestMountain" >
+                            <h4>Everest base camp trek nepal</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/tiger's nest monastey.jpg" alt="tigernest">
+                            <h4>tiger's nest monastery bhutan hike</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/'stairway to heaven'.jpg" alt="hawaii">
+                            <h4>'stairway to heaven' hawaii hike</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex_container">
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/mount fitz.jpg" alt="mount fitz" >
+                            <h4>mount fitz roy patagonia hike</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/kawah ijen volcano lake.jpg" alt="lake">
+                            <h4>kawah ijen volcano lake</h4>
+                        </a>
+                    </div>
+                    <div class="img_container">
+                        <a href="BlogDetail.html">
+                            <img src="images/utah.jpg" alt="utah">
+                            <h4>23 best hikes in utah</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="readMoreBtn">
+                <a href="blog.html">
+                    Read More &nbsp;&#62;&#62;
+                </a>
+            </div>
+        </div>
+    
+
+
+        <!-- recent blog & about container -->
+        <div class="recentpost">
+            <!-- start of recent sectionf -->
+            <div class="left">
+                <h3 class="miniTitle">
+                    <span>Recent Posts</span>
+                </h3>
+                <div class="row_container">
+                    <div class="img66">
+                        <div class="subimg">
+                            <a href="BlogDetail.html">
+                                <img src="images/thailand.jpg" alt="thailand">
+                            </a>
+                        </div>
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href="#"><span>Asia</span></a>
+                                <a href="#"><span>Bucket Lists</span></a>
+                                <a href="#"><span>Krabi</span></a>
+                                <a href="#"><span>Phuket</span></a>
+                                <a href="#"><span>South Thailand </span></a>
+                    
+                            </div>
+                            <div class="enry_title">
+                                <h2>Samet Nangshe Viewpoint: Best Sunrise Spot In Thailand</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                        </div>
+                        <div class="readMoreBtn">
+                            <a href="BlogDetail.html">
+                                Read Now &nbsp;&#62;&#62;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img66" style="margin-left: 4%;">
+                        <div class="subimg">
+                            <a href="BlogDetail.html">
+                                <img src="images/Bhutan.webp" alt="thailand">
+                            </a>
+                        </div>
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href="#"><span>Asia</span></a>
+                                <a href="#"><span>Bhutan</span></a>
+                                <a href="#"><span>Bucket Lists</span></a>
+                                <a href="#"><span>Itineraries</span></a>
+                                <a href="#"><span>Temples</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>7 Days In Bhutan Travel Itinerary: Best Things To Do & See</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+
+                        </div>
+                        <div class="readMoreBtn">
+                            <a href="BlogDetail.html">
+                                Read Now &nbsp;&#62;&#62;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_container">
+                    <div class="img66">
+                        <div class="subimg">
+                            <a href="BlogDetail.html">
+                                <img src="images/tiger's nest monastey.jpg" alt="tiger's nest">
+                            </a>
+                        </div>
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href="#"><span>Asia</span></a>
+                                <a href="#"><span>Bhutan</span></a>
+                                <a href="#"><span>Hiking</span></a>
+                                <a href="#"><span>Mountain</span></a>
+                                <a href="#"><span>Temples</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>Samet Nangshe Viewpoint: Best Sunrise Spot In Thailand</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                        </div>
+                        <div class="readMoreBtn">
+                            <a href="BlogDetail.html">
+                                Read Now &nbsp;&#62;&#62;
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img66" style="margin-left: 4%;">
+                        <div class="subimg">
+                            <a href="BlogDetail.html">
+                                <img src="images/Arizona.jpg" alt="Arizona">
+                            </a>
+                        </div>
+                        <div class="link_container">
+                            <div class="miniLinks">
+                                <a href="#"><span>Arizona</span></a>
+                                <a href="#"><span>North America</span></a>
+                                <a href="#"><span>Slot Canyons</span></a>
+                                <a href="#"><span>United State</span></a>
+                            </div>
+                            <div class="enry_title">
+                                <h2>15 Best Arizona Slot Canyons + Map</h2>
+                                <h2 style="color: #888888; font-size: 14px;">November 12,2023</h2>
+                            </div>
+                        </div>
+                        <div class="readMoreBtn">
+                            <a href="BlogDetail.html">
+                                Read Now &nbsp;&#62;&#62;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of Recent section -->
+                
+            </div>
+            <div class="right">
+                <div class="aboutHomecontainer">
+                    <h3 class="miniTitle" style="margin-top: 3%;">
+                        <span>About Me</span>
+                    </h3>
+                    <div class="aboutHome">   <!--About text in Home Page-->
+                        <img src="images/me.jpg" alt="us">
+                    </div>
+                    <div class="about_des">
+                        <p>
+                            Hey there! I'm
+                                <strong>David,</strong>
+                                    an American who has been traveling the world full time for 8 years now.
+                                        <br>
+                            My wife Intan and I are usually in our second home <strong>Bali</strong>, but our journeys take us to destinations all over the world.
+                            <br><br>
+                            Please tag along!
+                        </p>
+                    </div>
+                </div>
+                <div class="social_container">
+                    <h3 class="miniTitle" style="margin-top: 3%;">
+                        <span>Social Media</span>
+                    </h3>
+                    <div class="socialMedia">
+                        <a href="https://www.facebook.com/TheWorldTravelGuy">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/theworldtravelguy/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>           
+                        <a href="https://www.youtube.com/@TheWorldTravelGuy/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>  
+                        <a href="https://www.pinterest.com/TheWorldTravelGuy/">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emailInput">
+            <h3>Newsletter</h3>
+            <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+            <div class="inputGp mt-2 mx-auto pb-2">
+                <input type="email" name="userEmail" placeholder="E-mail..." required id="input">
+                <button id="subscribe" onclick="ChangeText()">Subscribe</button>
+            </div>
+        </div>
+
+
+
+        <div class="footer_container pt-2">
+            <div class="footer_link">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+            <div class="copyRight mx-auto pt-2 text-center">
+                <p class="pt-2 pb-1">&copy; The World Travel Guy 2023</p>
+                <span>Affiliate Disclosures</span><span>Privacy Policy</span><span>Terms Of Use</span>
+                <p class="mt-3 w-75 mx-auto pb-2 mb-0">Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I feel are high quality and helpful to my readers. Thanks for your support.</p>
+            </div>
+        </div>
+    </div>
+    <script src="newJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
